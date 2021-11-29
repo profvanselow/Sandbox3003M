@@ -1,0 +1,20 @@
+\hypertarget{_calc_8h_source}{}\doxysection{Calc.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keywordtype}{double} calc\_total\_meal\_price(\textcolor{keywordtype}{double} meal\_price) \{ \textcolor{comment}{// header(parameter), void is the return type}}
+\DoxyCodeLine{4     \textcolor{comment}{// function body}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6     \textcolor{keywordtype}{double} \textcolor{keyword}{const} LEE\_COUNTY\_TAX\_RATE = .065; \textcolor{comment}{// named constant to avoid "{}magic numbers"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8     \textcolor{keywordtype}{double} tax = meal\_price * LEE\_COUNTY\_TAX\_RATE; \textcolor{comment}{// local variables}}
+\DoxyCodeLine{9     \textcolor{keywordtype}{double} tip = meal\_price * .15;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     \textcolor{keywordtype}{double} total\_price = meal\_price + tax + tip;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} total\_price;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}

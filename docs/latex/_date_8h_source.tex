@@ -1,0 +1,30 @@
+\hypertarget{_date_8h_source}{}\doxysection{Date.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DATE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DATE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_date}{Date}} \{}
+\DoxyCodeLine{6  \textcolor{keyword}{private}:}
+\DoxyCodeLine{7   \textcolor{keywordtype}{int} m\_year;}
+\DoxyCodeLine{8   \textcolor{keywordtype}{int} m\_month;}
+\DoxyCodeLine{9   \textcolor{keywordtype}{int} m\_day;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11  \textcolor{keyword}{public}:}
+\DoxyCodeLine{12   \mbox{\hyperlink{class_date}{Date}}();  \textcolor{comment}{// prototype of the constructor}}
+\DoxyCodeLine{13   \mbox{\hyperlink{class_date}{Date}}(\textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{int} day); \textcolor{comment}{// prototype of the constructor}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15   \textcolor{keywordtype}{int} operator-\/(\mbox{\hyperlink{class_date}{Date}} value);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \textcolor{keywordtype}{void} SetDate(\textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{int} day);}
+\DoxyCodeLine{18   std::string GetISODate();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20   \textcolor{keywordtype}{int} getYear() \{ \textcolor{keywordflow}{return} m\_year; \}}
+\DoxyCodeLine{21   \textcolor{keywordtype}{int} getMonth() \{ \textcolor{keywordflow}{return} m\_month; \}}
+\DoxyCodeLine{22   \textcolor{keywordtype}{int} getDay() \{ \textcolor{keywordflow}{return} m\_day; \}}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

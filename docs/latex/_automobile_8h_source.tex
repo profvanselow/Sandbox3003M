@@ -1,0 +1,24 @@
+\hypertarget{_automobile_8h_source}{}\doxysection{Automobile.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_automobile}{Automobile}} \{}
+\DoxyCodeLine{5  \textcolor{keyword}{private}:}
+\DoxyCodeLine{6   \textcolor{keywordtype}{int} numWheels;}
+\DoxyCodeLine{7   \textcolor{keywordtype}{int} speed;  \textcolor{comment}{// could have done = 0}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{10   std::string make;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12  \textcolor{keyword}{public}:}
+\DoxyCodeLine{13   \textcolor{keywordtype}{void} accelerate() \{ ++speed; \}}
+\DoxyCodeLine{14   \textcolor{keywordtype}{void} brake() \{ -\/-\/speed; \}}
+\DoxyCodeLine{15   \textcolor{keywordtype}{int} getSpeed() \{ \textcolor{keywordflow}{return} speed; \}}
+\DoxyCodeLine{16   \textcolor{keywordtype}{void} setSpeed(\textcolor{keywordtype}{int} s) \{ speed = s; \}}
+\DoxyCodeLine{17   \mbox{\hyperlink{class_automobile}{Automobile}}() \{ speed = 0; \}}
+\DoxyCodeLine{18   \mbox{\hyperlink{class_automobile}{Automobile}}(\textcolor{keywordtype}{int} n) : speed\{0\}, numWheels\{n\} \{\}  \textcolor{comment}{// initialization list (cool)}}
+\DoxyCodeLine{19 \};}
+
+\end{DoxyCode}

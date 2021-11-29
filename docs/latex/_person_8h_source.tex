@@ -1,0 +1,22 @@
+\hypertarget{_person_8h_source}{}\doxysection{Person.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_person}{Person}} \{}
+\DoxyCodeLine{5  \textcolor{keyword}{private}:}
+\DoxyCodeLine{6   \textcolor{keywordtype}{int} age = 0;}
+\DoxyCodeLine{7   std::string name;}
+\DoxyCodeLine{8   std::string dob;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10  \textcolor{keyword}{public}:}
+\DoxyCodeLine{11   \textcolor{keyword}{virtual} std::string drive()  \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}normal"{}}; \}}
+\DoxyCodeLine{12   \textcolor{comment}{// the keyword virtual is used when a function is intended}}
+\DoxyCodeLine{13   \textcolor{comment}{// to be overriden }}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} get\_older() \{ \textcolor{keywordflow}{return} ++age; \}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \};}
+
+\end{DoxyCode}

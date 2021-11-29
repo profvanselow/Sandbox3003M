@@ -1,0 +1,17 @@
+\hypertarget{_accumulator_8h_source}{}\doxysection{Accumulator.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{keyword}{class }\mbox{\hyperlink{class_accumulator}{Accumulator}} \{}
+\DoxyCodeLine{3  \textcolor{keyword}{private}:}
+\DoxyCodeLine{4   \textcolor{keywordtype}{int} m\_value;}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6  \textcolor{keyword}{public}:}
+\DoxyCodeLine{7   \mbox{\hyperlink{class_accumulator}{Accumulator}}() \{ m\_value = 0; \}}
+\DoxyCodeLine{8   \textcolor{keywordtype}{void} add(\textcolor{keywordtype}{int} value) \{ m\_value += value; \}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10   \textcolor{comment}{// Make the reset() function a friend of this class}}
+\DoxyCodeLine{11   \textcolor{keyword}{friend} \textcolor{keywordtype}{void} reset(\mbox{\hyperlink{class_accumulator}{Accumulator}}\& accumulator);}
+\DoxyCodeLine{12 \};}
+
+\end{DoxyCode}

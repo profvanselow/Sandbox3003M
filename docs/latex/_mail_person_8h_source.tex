@@ -1,0 +1,14 @@
+\hypertarget{_mail_person_8h_source}{}\doxysection{Mail\+Person.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Person.h"{}}}
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_mail_person}{MailPerson}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_person}{Person}} \{}
+\DoxyCodeLine{4  \textcolor{keyword}{private}:}
+\DoxyCodeLine{5   \textcolor{keywordtype}{int} num\_parcels = 0;}
+\DoxyCodeLine{6  \textcolor{keyword}{public}:}
+\DoxyCodeLine{7   std::string drive()\textcolor{keyword}{ override }\{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}slow"{}}; \}}
+\DoxyCodeLine{8   std::string deliver() \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}here's your package"{}}; \}}
+\DoxyCodeLine{9 \};}
+
+\end{DoxyCode}
